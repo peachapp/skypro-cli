@@ -79,7 +79,7 @@ const ask = () => {
 
 // 入口函数
 const init = () => {
-  figlet('SKY CLI!', { horizontalLayout: "full" }, function (err, data) {
+  figlet('SKYPRO CLI!', { horizontalLayout: "full" }, function (err, data) {
     if (err) {
       console.log('Something went wrong...');
       console.dir(err);
@@ -102,7 +102,7 @@ if (program.opts() && program.opts().list) {
   })
 };
 
-// 解析参数指令 sky-cli、sky-cli i、sky-cli install
+// 解析参数指令 skypro-cli、skypro-cli i、skypro-cli install
 const ps = program.parse(process.argv);
 if (ps?.args && ps.args[0]) {
   switch (ps.args[0]) {
